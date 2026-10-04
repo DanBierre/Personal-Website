@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Security: static hosts like GitHub Pages can't send headers, so the policy lives here.
+     Only this site's own files plus Google Fonts may load; no inline scripts, forms, plugins or <base> tricks. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Dan · Code and editing, Auckland to Japan</title>
+<meta name="description" content="Websites, AI agent workflows and video editing. Auckland, NZ, heading to Japan.">
+<!-- Link preview card. og:image needs a full URL, so add it once the site has a domain. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dan · Code and editing, Auckland to Japan">
+<meta property="og:description" content="Websites, AI agent workflows and video editing. Auckland, NZ, heading to Japan.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <button class="ctl" data-lang-toggle aria-label="Switch page to Japanese" data-en="日本語" data-ja="English">日本語</button>
+  <button class="ctl" data-theme-toggle>dark</button>
+</header>
+
+<main class="line">
+  <section class="hero">
+    <!-- Gutter labels are decorative (each section's heading already names it), so screen readers skip them -->
+    <div class="gutter" aria-hidden="true"><span class="v" lang="ja">ダン</span></div>
+    <span class="now" aria-hidden="true"></span>
+    <div class="intro">
+      <div class="clocks" aria-label="Time in Auckland and Tokyo">
+        <span>AKL<span data-clock="akl"></span></span>
+        <span>TYO<span data-clock="tyo"></span></span>
+      </div>
+      <div class="say">
+        <h1 data-en-html="I'm Dan. I build <em>with</em> code and edit <em>with</em> intent." data-ja-html="ダンです。<em>コード</em>で作り、<em>意図</em>を持って編集する。">I'm Dan. I build <em>with</em> code and edit <em>with</em> intent.</h1>
+        <p class="what" data-en="Websites · AI agent workflows · Video editing" data-ja="ウェブサイト・AIエージェント・映像編集">Websites · AI agent workflows · Video editing</p>
+        <p class="go">
+          <a class="link" href="#work" data-en="See Shoji" data-ja="Shojiを見る">See Shoji</a>
+          <a class="link" href="#contact" data-en="Email me" data-ja="メールする">Email me</a>
+        </p>
+      </div>
+    </div>
+    <figure class="photo">
+      <div class="portrait"><div class="pic"><img src="images/about.jpg" width="800" height="1064" alt="Dan at Fushimi Inari, Kyoto"></div><span data-enso="4.5"></span></div>
+      <figcaption data-en="Fushimi Inari, Kyoto" data-ja="伏見稲荷大社、京都">Fushimi Inari, Kyoto</figcaption>
+    </figure>
+  </section>
+
+  <section class="reveal stop work field" id="work" aria-labelledby="h-work">
+    <div class="gutter" aria-hidden="true"><span class="v" lang="ja">制作</span></div>
+    <span class="dot" aria-hidden="true"></span>
+    <div class="work-grid">
+      <div>
+        <h2 id="h-work">Shoji</h2>
+        <span class="soon" data-en="coming soon" data-ja="近日公開">coming soon</span>
+        <p data-en="A desktop planner for people who work from home. Time blocks, reminders, streaks, a focus timer and a journal, all there to keep distractions out. English and Japanese."
+           data-ja="在宅で働く人のためのデスクトップ・プランナー。タイムブロック、リマインダー、連続記録、集中タイマー、ジャーナルで気が散るのを防ぎます。英語と日本語に対応。">A desktop planner for people who work from home. Time blocks, reminders, streaks, a focus timer and a journal, all there to keep distractions out. English and Japanese.</p>
+        <div class="stack">Electron · Tailwind CSS · JavaScript</div>
+        <p class="also" data-en="Also building: full-stack websites, and a Japanese study app and tools." data-ja="ほかに制作中：フルスタックのウェブサイトと、日本語学習アプリ・ツール。">Also building: full-stack websites, and a Japanese study app and tools.</p>
+      </div>
+      <div class="pair">
+        <img src="images/shoji-today-light.png" width="440" height="944" alt="Shoji's Today screen, light theme">
+        <img src="images/shoji-today-dark.png" width="440" height="944" alt="Shoji's Today screen, dark theme">
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal stop" aria-labelledby="h-about">
+    <div class="gutter" aria-hidden="true"><span class="v" lang="ja">自己紹介</span></div>
+    <span class="dot" aria-hidden="true"></span>
+    <div>
+      <h2 class="lead" id="h-about" data-en="Auckland, NZ, heading to Japan." data-ja="オークランドから、日本へ。">Auckland, NZ, heading to Japan.</h2>
+      <dl class="rows">
+        <div class="r">
+          <dt data-en="Background" data-ja="経歴">Background</dt>
+          <dd data-en="I started out in film. A BA in 3D Composition and years of video editing gave me a good eye for craft and detail."
+              data-ja="映像制作からスタートしました。3Dコンポジションの学士号と長年の動画編集の経験で、細部にこだわる目を養いました。">I started out in film. A BA in 3D Composition and years of video editing gave me a good eye for craft and detail.</dd>
+        </div>
+        <div class="r">
+          <dt data-en="These days" data-ja="今は">These days</dt>
+          <dd data-en="I split my time between code and editing: building AI agent workflows for clients, and getting back into video work by relearning After Effects. Next stop, Japan."
+              data-ja="コードと編集の両方をやっています。クライアント向けにAIエージェントのワークフローを作りながら、After Effectsを学び直して映像の仕事にも戻りつつあります。次は日本です。">I split my time between code and editing: building AI agent workflows for clients, and getting back into video work by relearning After Effects. Next stop, Japan.</dd>
+        </div>
+        <div class="r">
+          <dt data-en="Japanese" data-ja="日本語">Japanese</dt>
+          <dd data-en="Self-taught, sparked by anime, kept alive by living there. Aiming for JLPT N2, then living and working in Japan."
+              data-ja="独学で、きっかけはアニメ。日本で暮らして本気になりました。目標はJLPT N2、そして日本で暮らして働くこと。">Self-taught, sparked by anime, kept alive by living there. Aiming for JLPT N2, then living and working in Japan.</dd>
+        </div>
+        <div class="r">
+          <dt data-en="Outside work" data-ja="仕事以外">Outside work</dt>
+          <dd data-en="Anime and manga, games, hiking, skiing and photography." data-ja="アニメ・漫画、ゲーム、ハイキング、スキー、写真。">Anime and manga, games, hiking, skiing and photography.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="reveal stop contact" id="contact" aria-labelledby="h-contact">
+    <div class="gutter" aria-hidden="true"><span class="v" lang="ja">連絡先</span></div>
+    <span class="dot" aria-hidden="true"></span>
+    <div>
+      <h2 class="lead" id="h-contact" data-en="Got something interesting to build? Let's talk." data-ja="面白いプロジェクトがあれば、ぜひ話しましょう。">Got something interesting to build? Let's talk.</h2>
+      <p class="reach">
+        <a class="mail link" href="mailto:bierredan@gmail.com">bierredan@gmail.com</a>
+        <!-- For visitors whose mailto link opens nothing (webmail on a phone) -->
+        <button class="ctl" data-copy="bierredan@gmail.com" data-en="copy address" data-ja="アドレスをコピー">copy address</button>
+        <span class="copied" role="status" data-copied></span>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer><span>© <span data-year>2026</span> <span data-en="Dan" data-ja="ダン">Dan</span></span><span data-en="Auckland to Tokyo" data-ja="オークランドから東京へ">Auckland to Tokyo</span></footer>
+<script src="script.js"></script>
+</body>
+</html>

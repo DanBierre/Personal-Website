@@ -1,0 +1,26 @@
+# Secrets: never commit
+.env
+.env.*
+*.pem
+*.key
+
+# FH Enso is a personal-use test font: never commit it (needs a paid licence first)
+fonts/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Abandoned Astro rewrite (backed up as a zip outside the repo)
+node_modules/
+dist/
+.astro/
+src/
+public/
+astro.config.mjs
+package.json
+package-lock.json
+tsconfig.json
